@@ -148,11 +148,11 @@ function Checkout() {
       */
 
       await emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_r9j9ub2",
+        "template_1rnl4sl",
         templateParams,
         {
-          publicKey: "YOUR_PUBLIC_KEY",
+          publicKey: "y-2UyZROSd16TYCXK",
         }
       );
 
