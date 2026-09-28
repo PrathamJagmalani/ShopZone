@@ -509,8 +509,7 @@ function Checkout() {
               </h3>
 
               <img
-                src="/qr-code.png"
-                alt="UPI Payment QR Code"
+src={`${import.meta.env.BASE_URL}qr-code.png`}                alt="UPI Payment QR Code"
                 className="payment-qr"
               />
 
