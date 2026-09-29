@@ -1923,3 +1923,424 @@ button {
   color: #444;
   font-size: 13px;
 }
+/* =========================================
+   PRODUCTS PAGE
+========================================= */
+
+.products-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 40px 70px;
+}
+
+/* Products heading */
+
+.products-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.products-header h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 800;
+  color: #222;
+}
+
+.products-header p {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #666;
+}
+
+/* =========================================
+   PRODUCT CONTROLS
+========================================= */
+
+.product-controls {
+  display: grid;
+  grid-template-columns: 1fr 220px 220px;
+  gap: 18px;
+  align-items: end;
+  margin-bottom: 25px;
+}
+
+/* Search */
+
+.search-box {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 15px;
+
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  transition: 0.2s ease;
+}
+
+.search-box:focus-within {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+}
+
+.search-box span {
+  font-size: 20px;
+}
+
+.search-box input {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  font-size: 15px;
+  background: transparent;
+  color: #222;
+}
+
+.search-box input::placeholder {
+  color: #999;
+}
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.filter-box {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.filter-box label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+}
+
+.filter-box select {
+  width: 100%;
+  height: 48px;
+
+  padding: 0 14px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background: #fff;
+  color: #222;
+
+  font-size: 15px;
+
+  outline: none;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.filter-box select:hover {
+  border-color: #667eea;
+}
+
+.filter-box select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+}
+
+/* =========================================
+   PRODUCTS INFO
+========================================= */
+
+.products-info {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.products-info strong {
+  color: #333;
+}
+
+/* =========================================
+   PRODUCT GRID
+========================================= */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* =========================================
+   NO PRODUCTS
+========================================= */
+
+.no-products {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.no-products-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.no-products h2 {
+  margin-bottom: 8px;
+}
+
+.no-products p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.no-products button {
+  border: none;
+  background: #667eea;
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.no-products button:hover {
+  background: #5568d9;
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   PAGINATION
+========================================= */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 45px;
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pagination-btn,
+.page-btn {
+  height: 42px;
+  min-width: 42px;
+
+  padding: 0 14px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  background: #fff;
+  color: #333;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled),
+.page-btn:hover {
+  background: #667eea;
+  border-color: #667eea;
+  color: white;
+}
+
+.page-btn.active {
+  background: #667eea;
+  border-color: #667eea;
+  color: white;
+}
+
+.pagination-btn:disabled {
+  background: #f1f1f1;
+  color: #aaa;
+  border-color: #e0e0e0;
+
+  cursor: not-allowed;
+}
+
+.pagination-dots {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 25px;
+
+  color: #777;
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.loading-container {
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.loading-container h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.loading-container p {
+  color: #777;
+}
+
+.loader {
+  width: 45px;
+  height: 45px;
+
+  border: 4px solid #e5e5e5;
+  border-top-color: #667eea;
+
+  border-radius: 50%;
+
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================
+   ERROR
+========================================= */
+
+.error-container {
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.error-container h2 {
+  color: #e53935;
+}
+
+.error-container p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.error-container button {
+  border: none;
+
+  background: #667eea;
+  color: white;
+
+  padding: 12px 24px;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.error-container button:hover {
+  background: #5568d9;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-controls {
+    grid-template-columns: 1fr 180px 180px;
+  }
+}
+
+@media (max-width: 800px) {
+  .products-page {
+    padding: 35px 20px 50px;
+  }
+
+  .products-header h1 {
+    font-size: 34px;
+  }
+
+  .product-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 550px) {
+  .products-page {
+    padding: 25px 15px 40px;
+  }
+
+  .products-header h1 {
+    font-size: 30px;
+  }
+
+  .products-header p {
+    font-size: 15px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination-btn {
+    padding: 0 10px;
+  }
+
+  .page-btn {
+    min-width: 38px;
+    height: 38px;
+    padding: 0 9px;
+  }
+}
